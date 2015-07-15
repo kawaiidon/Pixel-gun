@@ -1,0 +1,213 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+      
+}
+header, nav, section, article, aside, footer {
+	display: block;
+          
+}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	height: 100%;
+        background: black url('img/background1.png') repeat-x;
+        
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+p {
+	margin: 0 0 18px
+}
+img {
+	border: none;
+}
+input {
+	vertical-align: middle;
+}
+#wrapper {
+	width: 100%;
+	min-width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+        z-index:0;
+ background: url('img/background2.png') top center no-repeat;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+width: 1px;
+height: 1px;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+    margin-top: 170px;
+	padding: 0 0 100px;
+        margin-left: 30px;
+}
+
+#youtube {
+    float: left;
+    display: block;
+	background: url('img/ipad.png')  center no-repeat;
+        height: 320px;
+        width: 444px;
+        margin-left: 5px;
+      
+}
+
+#solder {
+        width: 714px;
+        margin: 0 auto;
+          height: 320px;
+}
+#solder1 {
+        display: block;
+        float: left;
+        width: 127px;
+        margin-top: 40px;
+}
+#solder2 {
+        display: block;
+       width: 138px;
+       margin-top: 40px;
+       
+}
+#appstoprebutton_img
+{
+    
+margin-top: 30px;
+margin-left: 110px;
+       
+}
+#features
+{
+	margin: 0 auto;
+        height: 240px;
+        width: 400px;
+
+}
+#features_img
+{
+}
+#contact_us
+{
+   	margin: 0 auto;
+        height: 50px;
+        width: 645px;
+           
+}
+
+#contact_img
+{
+    float: left;
+    margin-top: 12px;
+}
+#contact_form_button
+{
+    float: left;
+    margin-left: 25px;
+}
+
+
+
+   /* Form
+-----------------------------------------------------------------------------*/
+#form {
+        top: 200px;
+	height: 226px;
+	width: 347px;
+	background:url(img/contact_form.png);
+	margin:0 auto;
+        position: relative;
+        display: none;
+
+}
+#back_op{
+     position: absolute;
+        top: 0;
+     left: 0;
+    height: 100%;
+	width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+   
+}
+
+
+.inpt1 {
+margin-top: 74px;
+font-family: 'Myriad Pro';
+ font-size: 18pt;
+width: 315px;
+height: 26px;
+border: 2;
+background: rgb(74, 85, 11);
+margin-left: 15px;
+}
+
+.inpt2 {
+margin-top: 25px;
+font-family: 'Myriad Pro';
+ font-size: 16pt;
+background: rgb(74, 85, 11);
+border: 2;
+width: 318px;
+height: 81px;
+resize: none;
+margin-left: 15px;
+}
+
+.btn{
+margin-top: 17px;
+margin-left: 110px;
+} 
+    
+#background { 
+  left: 0; 
+  top: 0; 
+  position: absolute; 
+  background: #000; 
+  opacity: 0.7; 
+  z-index: 999; 
+  display: none; 
+  height: 100%; 
+  width: 100%; 
+} 
+ 
+#modal_window { 
+ display: none; 
+ z-index: 9999; 
+ height: 226px;
+ width: 347px;
+ background:url(img/contact_form.png);
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	margin: -100px auto 0;
+	min-width: 1000px;
+	height: 100px;
+		position: relative;
+}
+#footer_text{
+    margin: 0 auto;
+    height: 20px;
+            width: 400px;
+            margin-top: 20px;
+}
+
+

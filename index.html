@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<meta charset="utf-8" />
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection" />
+	<!--[if lte IE 6]><link rel="stylesheet" href="style_ie.css" type="text/css" media="screen, projection" /><![endif]-->
+        
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        
+</head>
+
+<body>
+    
+
+<div id="wrapper">
+
+	<header id="header">
+	</header><!-- #header-->
+             
+	<div id="content">
+            <div id="solder">
+                
+                <img id="solder1" src="img/man_1.png"></img>
+               
+             <div id="youtube">
+<object width="320" height="215" style="    margin-top: 25px;    position: absolute;    margin-left: 50px;"><param name="movie" value="//www.youtube.com/v/kA1L3GprJec?version=3&amp;hl=ru_RU&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/kA1L3GprJec?version=3&amp;hl=ru_RU&amp;rel=0" type="application/x-shockwave-flash" width="320" height="215" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+             </div> 
+                 <img id="solder2" src="img/man_2.png"></img>
+            </div>
+            <div id="features">
+                <img id="features_img" src="img/icon.png"></img>    
+                   
+                    
+                    <p><a href="https://itunes.apple.com/us/app/pixlgun-3d-block-world-pocket/id640111933?mt=8"><img id="appstoprebutton_img" src="img/icon_appstore.png" ></a></p>
+                </div>
+            <div id="contact_us">
+                
+                <img id="contact_img" src="img/text.png"></img>  
+                 <img onclick="open_popup('#modal_window');" id="contact_form_button" src="img/send_2.png"></img>  
+                </div>
+                      <div id="footer_text">
+
+                                      
+					<div id='modal_window'><form action="mailer.php" method="POST" >
+				
+						<input type="text" name="mail_from" class="inpt1" ></input>
+					
+			
+						<textarea name="message" class="inpt2" cols="50" ></textarea>
+						<input type="image" src="img/send.png" class="btn" onmouseover="this.src='img/send_n.png'" onmouseout="this.src='img/send.png'"></input>
+					</form></div>
+                                        <div id="background" onclick="close_popup('#modal_window');"></div>
+
+                          
+                          
+                          
+    <h3 style="    color: rgba(255, 204, 0, 0.28);">Copyright 2012-2013 Krasnov Games, LLC. Rilisoft ©</h3>
+                        </div>
+	</div><!-- #content-->
+
+</div><!-- #wrapper -->
+
+<footer id="footer">
+    
+
+</footer><!-- #footer -->
+<script>
+/* Открываем модальное окно: */
+function open_popup(box) { 
+  $("#background").show() 
+  $(box).centered_popup(); 
+  $(box).delay(100).show(1); 
+} 
+ 
+/* Закрываем модальное окно: */
+function close_popup(box) { 
+  $(box).hide(); 
+  $("#background").delay(100).hide(1); 
+} 
+ 
+$(document).ready(function() { 
+  /* Позиционируем блочный элемент окна по центру страницы: */
+  $.fn.centered_popup = function() { 
+    this.css('position', 'absolute'); 
+    this.css('top', ($(window).height() - this.height()) / 2 + $(window).scrollTop() + 'px'); 
+    this.css('left', ($(window).width() - this.width()) / 2 + $(window).scrollLeft() + 'px'); 
+  } 
+ 
+});</script>
+</body>
+</html>
